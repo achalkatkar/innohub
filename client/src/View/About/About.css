@@ -1,0 +1,24 @@
+.about-container{
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+    width: 100%;
+}
+.about-text{
+    width: 50%;
+    height: 400px;
+    padding: 10px;
+}
+
+.about-text b{
+    font-size: 20px;
+}
+
+.about-text p{
+    font-size: 15px;
+}
+
+.about-text span{
+    color: rgb(43, 41, 41);
+    font-weight: 600;
+}

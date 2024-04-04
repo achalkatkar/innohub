@@ -1,0 +1,12 @@
+.container-fluid{
+    background-color: aqua;
+    height: 90px;
+    text-decoration: none;
+}
+
+.nav-link{
+    display: inline-block;
+    justify-content: right;
+    margin-left: 10px;
+    text-decoration: none;
+}
