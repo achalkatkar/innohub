@@ -1,0 +1,56 @@
+.scroll-container{
+
+    background-color:  rgb(22, 24, 24);
+    height: 360px;
+    width: 80%;
+    padding: 10px;
+    margin: 20px;
+    
+
+}
+
+.scroll-img{
+    border-radius: 10px;
+    height: 130px;
+    width: 130px;
+    display: block;
+    margin: auto auto;
+    padding: 20px;
+
+}
+
+
+.scroll-div-1{
+    background-color: rgba(191, 187, 170, 0.932);
+
+}
+
+.scroll-div-2{
+    background-color: white;
+   text-align: center;
+    align-items: center;
+    gap: 30px;
+    padding: 5px;
+    height: 160px;
+}
+.scroll-name{
+    margin: 20px;
+    font-weight: 400;
+    font-size: 20px;
+}
+.scroll-btn{
+    background-color: rgb(243, 198, 34);
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 5px;
+    width: 150px;
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+.slick-slide > div{
+    margin: 0 10px;
+}

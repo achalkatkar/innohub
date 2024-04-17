@@ -1,35 +1,29 @@
+import React from 'react';
+import './Navbar.css'; // Import CSS file for styling
 
-import './Navbar.css'
+function Navbar() {
 
-import React from 'react' 
+  
 
-const Navbar = () => {
   return (
-    <div>
-     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Mastery Marketing</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="/">Home</a>
-        <a class="nav-link" href="/service">Course</a>
-        <a class="nav-link" href="/about">About us</a>
-        <a class="nav-link" href="/contact">Contact us</a>
-        <a class="nav-link" href="/login">Login</a>
-      </div>
-    </div>
-  </div>
-</nav>
-     
+    <>
 
-      
-    </div>
-  )
+    <nav className='nav'>
+      <a href='#' className='brand'>marketing mastery</a>
+      <ul className='nav-menu'>
+        <li className='nav-item'><a href='./' className='nav-link'>Home</a></li>
+        <li className='nav-item'><a href='./about' className='nav-link'>About</a></li>
+        <li className='nav-item'><a href='./service' className='nav-link'>Course</a></li>
+        <li className='nav-item'><a href='./contact' className='nav-link'>Contact</a></li>
+        <li className='nav-item'><a href='./login' className='nav-link'>Login</a></li>
+        <li className='nav-item er-btn'><a href='./enroll' className='nav-link'>Enroll</a></li>
+      </ul>
+
+    </nav>
+
+    </>
+  );
 }
 
-export default Navbar
-
+export default Navbar;
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Service = () => {
   return (
@@ -9,8 +10,8 @@ const Service = () => {
 
     </div>
 
-    <b className='b-text'>Mt Bundle Courses</b>
-
+    <b className='b-text'>Marketing Mastery Bundle Courses</b>
+ 
     <div className='parent'>
       <div className='child'>
         <div className='sub-child sub'>
@@ -29,8 +30,8 @@ const Service = () => {
         <p><del> ₹1000</del>   ₹399/-</p>
         </div>
         <div className='sub-child'>
-        <button className='view-btn'>View Details</button><br/>
-        <button className='view-btn'>Enroll Now</button>
+        <Link to='/view'><button className='view-btn'>View Details</button><br/></Link>
+        <Link to='/enroll'><button className='enroll-view-btn'>Enroll Now</button></Link>
         </div>
       </div>
     </div>
@@ -53,8 +54,8 @@ const Service = () => {
         <p><del> ₹4999</del>   ₹2359/-</p>
         </div>
         <div className='sub-child'>
-        <button className='view-btn'>View Details</button><br/>
-        <button className='view-btn'>Enroll Now</button>
+        <Link to='/digitalView'><button className='view-btn'>View Details</button><br/></Link>
+        <Link to='/enroll'><button className='enroll-view-btn'>Enroll Now</button></Link>
         </div>
       </div>
     </div>
@@ -77,8 +78,8 @@ const Service = () => {
         <p><del> ₹2000</del>   ₹499/-</p>
         </div>
         <div className='sub-child'>
-        <button className='view-btn'>View Details</button><br/>
-        <button className='view-btn'>Enroll Now</button>
+       <Link to='/emailDetail'><button className='view-btn'>View Details</button><br/></Link> 
+        <Link to='/enroll'><button className='enroll-view-btn'>Enroll Now</button></Link>
         </div>
       </div>
     </div>
@@ -102,8 +103,8 @@ const Service = () => {
         <p><del> ₹8500</del>   ₹699/-</p>
         </div>
         <div className='sub-child'>
-        <button className='view-btn'>View Details</button><br/>
-        <button className='view-btn'>Enroll Now</button>
+        <Link to="/googleDetail"><button className='view-btn'>View Details</button></Link><br/>
+        <Link to='/enroll'><button className='enroll-view-btn'>Enroll Now</button></Link>
         </div>
       </div>
     </div>
@@ -127,12 +128,11 @@ const Service = () => {
         <p><del> ₹1500</del>   ₹399/-</p>
         </div>
         <div className='sub-child'>
-        <button className='view-btn'>View Details</button><br/>
-        <button className='view-btn'>Enroll Now</button>
+        <Link to="/youtubeDetail"><button className='view-btn'>View Details</button><br/></Link>
+        <Link to='/enroll'><button className='enroll-view-btn'>Enroll Now</button></Link>
         </div>
       </div>
     </div>
-
 
     
 

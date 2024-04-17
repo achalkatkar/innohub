@@ -1,0 +1,25 @@
+.signup{
+    border: 3px solid black;
+    height: 400px;
+    width: 500px;
+    margin: auto auto;
+    padding: 20px;
+}
+
+.signup .signup-btn{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    width: 200px;
+    height: 35px;
+    border: none;
+    border-radius: 20px
+}
+
+.sign-btn-s{
+    height: 30px;
+    width: 150px;
+    font-size: 18px;
+    background-color: rgb(26, 77, 26);
+    color: white;
+}

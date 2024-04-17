@@ -7,13 +7,19 @@ import Project from './View/Product/Product'
 import Service from './View/Service/Service';
 import About from './View/About/About';
 import Blog from './View/Blog/Blog';
-import Contact from './View/Contact/Contact';
 import Login from './View/Login/Login';
 import Navbar from './component/Navbar/Navbar';
 import FAQ from './FAQ/faq';
-import Enroll from './View/enroll/enroll';
+import Enroll from './component/enroll/enroll';
 import Footer from './component/Footer/Footer';
-
+import View from './component/View-detail/View';
+import YoutubeDetail from './component/View-detail/youtube-detail';
+import GoogleDetail from './component/View-detail/google-detail';
+import EmailDetail from './component/View-detail/email-detail';
+import DigitalView from './component/View-detail/digitals-detail';
+import Signup from './View/Signup/Signup';
+import Scroll from './component/scroll/scroll'
+import { ContactUs } from './View/Contact/Contact';
 
 
     const router = createBrowserRouter([
@@ -42,7 +48,7 @@ import Footer from './component/Footer/Footer';
         
         {
             path: "/contact",
-            element: <Contact/> ,
+            element: <ContactUs/> ,
         },
         
         {
@@ -57,6 +63,34 @@ import Footer from './component/Footer/Footer';
         {
             path: "/enroll",
             element: <Enroll/> ,
+        },
+        {
+            path: "/view",
+            element: <View/> ,
+        },
+        {
+            path: "/digitalView",
+            element: <DigitalView/> ,
+        },
+        {
+            path: "/youtubeDetail",
+            element: <YoutubeDetail/> ,
+        },
+        {
+            path: "/googleDetail",
+            element: <GoogleDetail/> ,
+        },
+        {
+            path: "/emailDetail",
+            element: <EmailDetail/> ,
+        },
+        {
+            path: "/signup",
+            element: <Signup/> ,
+        },
+        {
+            path: "/scroll",
+            element: <Scroll/> ,
         },
 
     ])

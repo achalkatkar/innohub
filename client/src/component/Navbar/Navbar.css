@@ -1,12 +1,49 @@
-.container-fluid{
-    background-color: aqua;
-    height: 90px;
-    text-decoration: none;
+li{
+    list-style: none;
 }
 
-.nav-link{
-    display: inline-block;
-    justify-content: right;
-    margin-left: 10px;
+a{
     text-decoration: none;
+    color: black;
+}
+.a:hover{
+  color: rgb(32, 8, 8);
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-around;
+    height: 8vh;
+    background-color: rgb(195, 197, 211);
+}
+
+.brand{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav-item:hover{
+  border-radius: 8px;
+  padding: 3px;
+  border-bottom: 3px solid white;
+}
+
+.er-btn{
+    background: linear-gradient(#f03b56,#e1c83e);
+    color: #f4eeee;
+    border-radius: 20px;
+    width: 90px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+
 }

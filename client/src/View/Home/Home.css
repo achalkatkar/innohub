@@ -4,16 +4,14 @@
 
 .b-text{
     text-align: center;
-    background-color: burlywood;
+    background-color: rgb(88, 88, 103);
     font-size: 20px;
     display: block;
-    margin-bottom: 80px;
     padding: 2px;
 }
 
 .main-card{
-    background-color: rgb(195, 127, 127);
-    height: 280px;
+    height: 350px;
     margin-top: 80px;
     width: 90%;
     display: flex;
@@ -24,7 +22,6 @@
 }
 
 .a-card{
-    background-color: cadetblue;
     height: 240px;
     width: 430px;
     margin: 10px;
@@ -35,7 +32,7 @@
 
 .parent{
     display: flex;
-    margin-top: 50px;
+    height: 220px;
     border: 2px black solid;
     margin: 30px;
     border-radius: 10px;
@@ -84,19 +81,36 @@ del{
 .view-btn{
     width: 240px;
     height: 40px;
-    border: 1px solid black;
+    border: none;
     font-size: 20px;
     padding: 5px;
     border-radius: 30px;
     margin: 10px;
+    cursor: pointer;
+    background-color: rgb(231, 102, 162);
+    
 }
+
+.enroll-view-btn{
+    width: 240px;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 30px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: rgb(92, 249, 121);
+}
+
 .o-m-p{
     text-align: center;
     margin-bottom: 60px;
+    color: rgb(94, 94, 100);
+    text-shadow:  teal -4px 7px 6px;
 }
 
 .sub-card{
-    background-color: rgb(195, 127, 127);
     height: 210px;
     margin-top: 80px;
     width: 90%;
@@ -107,78 +121,35 @@ del{
 
 }
 
-.s-card{
-    background-color: rgb(7, 36, 37);
-    height: 180px;
-    width: 430px;
-    margin: 10px;
-    color: red;
-    padding: 5px;
-    border-radius: 10px;
-}
 
-.que{
-    background-color: darkgreen;
-    height: 500px;
-    width: 70%;
-    display: block;
-    margin: auto auto;
-    color: aliceblue;
-}
+
 
 /* explore */
 
 .h-box{
-    
-    box-shadow: 6px 5px 4px greenyellow;
     text-align: center;
     font-size: 25px;
     padding: 5px;
-    background-color: rgb(223, 223, 156);
+    text-shadow:  teal -4px 7px 6px;
     border-radius: 5px;
-    box-shadow: 1px 1px 2px gray;
+    color: rgb(30, 30, 27);
  
 }
 
 /* frequently ask question*/
 
 .faq-container{
-    height: 300px;
+    gap: 2rem;
+    line-height: 30px;
+    border: 3px solid gainsboro;
+    height: 310px;
     width: 50%;
     margin: auto auto;
-    padding: 5px;
-    color: chocolate;
+    padding: 10px;
+    color: rgb(30, 30, 27);
 
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.bottom{
-    margin-top: 100px;
-    margin-bottom: 100px;
-    background-color: rgb(215, 136, 108) ;
-    height: 400px;
-    width: 100%;
-}
 
