@@ -1,70 +1,96 @@
+import React, {useState} from 'react';
+import  "./Signup.css"
+import axios from 'axios';
 
-import { useState } from 'react'
-import'./Signup.css'
-import { Link } from 'react-router-dom'
-import axios from 'axios'
 
-const Signup = () => {
+function SignUp(){
 
-    const [name, setName] = useState()
-    const [email, setEmail] = useState()
-    const [password, setPassword] = useState()
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [mobile, setMobile] = useState('')
+    const [password, setPassword] = useState('')
 
-    const handleSubimt = (e) => {
-       e.preventDefault()
-       axios.post('http://localhost:3001/signup',{name, email, password})
-       .then(result => console.log(result))
-       .catch(err => console.log(err))
+    const signup = async () => {
+        const response = await axios.post("/signup", {
+            name:name,
+            email:email,
+            mobile:mobile,
+            password:password,
+        });
+
+        if(response.data.success){
+            alert(response.data.message)
+            window.location.href = "./login";
+        }
     }
 
 
-  return (
-    <>
-    <div>
-      <h1>Signup</h1>
-      <div className="signup">
-        <form className="form" onSubmit={handleSubimt}>
-            <h1>Sign Up</h1>
+    return (
+        <div>
+            <div className='signup-container'>
+                <h1 className='signup-title'>SignUp </h1>
 
-            <label>Username</label>
-            <input 
-            type="text" 
-            placeholder="Enter your username" 
-            onChange={(e) => setName(e.target.value)}          
-             />
+                <div className='input-container'>
+                    <label className='input-label'>Name</label>
+                    <input
+                      type='text'
+                      placeholder='Enter your name'
+                      className='input-field'
+                      value={name}
+                      onChange={(e)=>{
+                        setName(e.target.value)
+                      }}
+                    />  
+                </div>
 
-             <br/> <br/>
+                <div className='input-container'>
+                    <label className='input-label'>Email</label>
+                    <input
+                      type='email'
+                      placeholder='Enter your email'
+                      className='input-field'
+                      value={email}
+                      onChange={(e)=>{
+                        setEmail(e.target.value)
+                      }}
+                    />  
+                </div>
 
-            <label>email</label>
-            <input 
-            type="email" 
-            placeholder="Enter your email" 
-            onChange={(e) => setEmail(e.target.value)} 
-            />
+                <div className='input-container'>
+                    <label className='input-label'>Mobile</label>
+                    <input
+                      type='text'
+                      placeholder='Enter your mobile'
+                      className='input-field'
+                      value={mobile}
+                      onChange={(e)=>{
+                        setMobile(e.target.value)
+                      }}
+                    />  
+                </div>
 
-            <br/> <br/>
-
-           <label>Password</label>
-           <input 
-           type='password'
-           placeholder='Enter Password'
-           onChange={(e) => setPassword(e.target.value)} >
-           </input>
-
-            <br/> <br/>
-
-             <p><a href='#'>Forget password</a></p>
-            </form>
-            <button className='signup-btn'>Signup</button>
-            <p>Don,t have an account?<a href='#'>Register</a></p>
-            <Link to='/login'> <button className='sign-btn-s'>Login</button></Link>
-        
-      </div>
-
-    </div>
-
-  </>
-  )
+                <div className='input-container'>
+                    <label className='input-label'>Password</label>
+                    <input
+                      type='password'
+                      placeholder='Enter your password'
+                      className='input-field'
+                      value={password}
+                      onChange={(e)=>{
+                        setPassword(e.target.value)
+                      }}
+                    />  
+                </div>
+                
+                <button 
+                    type='button' 
+                    className='signup-btn'
+                    onClick={signup} >
+                    Signup
+                </button>
+            </div>
+        </div>
+    )
 }
 
-export default Signup
+export default SignUp

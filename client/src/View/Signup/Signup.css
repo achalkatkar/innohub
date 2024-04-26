@@ -1,25 +1,35 @@
-.signup{
-    border: 3px solid black;
-    height: 400px;
-    width: 500px;
-    margin: auto auto;
-    padding: 20px;
+.signup-title{
+    text-align: center;
 }
-
-.signup .signup-btn{
+.signup-container{
+    background-color: white;
+    width: fit-content;
+    margin: 20px auto;
+    box-shadow: 0 0 10px black;
+    padding: 20px 40px;
+    border-radius: 15px;
+}
+.input-label{
+    display: block;
+    font-size: 22px;
+}
+.input-field{
+    font-size: 24px;
+    padding: 5px 10px;
+    border: solid gray 1px;
+    border-radius: 5px;
+}
+.input-container{
+    margin: 20px auto;
+    
+}
+.signup-btn{
     background-color: black;
     color: white;
-    font-size: 20px;
-    width: 200px;
-    height: 35px;
-    border: none;
-    border-radius: 20px
-}
-
-.sign-btn-s{
-    height: 30px;
-    width: 150px;
-    font-size: 18px;
-    background-color: rgb(26, 77, 26);
-    color: white;
+    font-size: 24px;
+    padding: 10px 50px;
+    border-radius: 30px;
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
 }

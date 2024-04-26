@@ -48,5 +48,5 @@
     "hint": "^7.1.11",
     "tailwindcss": "^3.4.3"
   },
-  "proxy": "http://localhost:3001"
+  "proxy": "http://localhost:5000"
 }
