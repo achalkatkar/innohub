@@ -1,90 +1,35 @@
-
 .login-container{
-    width:800px;
-    height: 430px;
-    margin:90px auto;
-    box-shadow: 2px 2px 10px  10px ;
-    padding:20px 40px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.login-div{
-    background-color: rgb(87, 159, 213);
-    height: 360px;
-    width: 360px;
+    background-color: white;
+    width: fit-content;
+    margin: 20px auto;
+    box-shadow: 0 0 10px black;
+    padding: 20px 40px;
+    border-radius: 15px;
 }
 .login-title{
-    text-align:center;
-    font-size: 40px;
-    color:white;
-    text-shadow:  teal -4px 7px 6px;
+    text-align: center;
 }
-.login-input-label{
-    display:block;
-    font-size:20px;
-    color: #004080;
-    margin-left: 40px;
-    margin-bottom: 5px;
+.input-label{
+    display: block;
+    font-size: 22px;
 }
 .input-field{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-size:20px;
-    padding:5px 10px;
-    border:1px solid #ccc;
-    border-radius:20px;
-    opacity: 0.5;
-    
+    font-size: 24px;
+    padding: 5px 10px;
+    border: solid gray 1px;
+    border-radius: 5px;
 }
 .input-container{
-    margin:20px auto;
-    margin-bottom: 40px;
+    margin: 20px auto;
+    
 }
 .login-btn{
-    background-color: rgb(81, 244, 138);
-    font-size:20px;
-    border-radius:30px;
-    display:block;
-    border: none;
-    margin: 0 auto;
-    height: 40px;
-    width: 270px;
-    margin-top: 30px;
-    cursor: pointer;
-}
-
-.wlc-container{
-    height: 360px;
-    width: 300px;
-
-}
-
-.wlc-heading{
-    font-size: 40px;
-    font-weight: bold;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    letter-spacing: 5px;
-    margin: 10px;
-    margin-top: 60px;
-}
-.wlc-text{
-    margin-top: 40px;
-    margin: 20px;
-}
-.learn-more-btn{
+    background-color: black;
     color: white;
-    background-color: rgb(247, 119, 166);
-    font-size:15px;
-    border-radius:30px;
-    padding: 5px;
-    display:block;
-    border: none;
-    height: 35px;
-    width: 120px;
-    margin-top: 30px;
+    font-size: 24px;
+    padding: 10px 50px;
+    border-radius: 30px;
+    display: block;
+    margin: 20px auto;
     cursor: pointer;
-    margin-left: 20px;
 }

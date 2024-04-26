@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './Home.css';
 import FAQ from '../../FAQ/faq';
 import { Link } from "react-router-dom"
@@ -7,10 +7,17 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import { checkLogin } from "../../utils/auth";
+
 import background from '../../image/background.png'
 
 
 const Home = () => {
+
+  useEffect(()=> {
+    checkLogin();
+
+}, []);
 
   const settings ={
     dots: true,
