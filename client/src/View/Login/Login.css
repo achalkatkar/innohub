@@ -5,6 +5,7 @@
     box-shadow: 0 0 10px black;
     padding: 20px 40px;
     border-radius: 15px;
+    margin-top: 90px;
 }
 .login-title{
     text-align: center;
@@ -24,12 +25,12 @@
     
 }
 .login-btn{
-    background-color: black;
-    color: white;
+    background-color: rgb(154, 245, 131);
     font-size: 24px;
     padding: 10px 50px;
     border-radius: 30px;
     display: block;
     margin: 20px auto;
     cursor: pointer;
+    border: none;
 }

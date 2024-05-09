@@ -224,7 +224,7 @@ const Home = () => {
    
 
 
-    <h1 className='o-m-p'> Frquently ask question </h1>
+    <h1 className='o-m-p'> Frequently ask question </h1>
 
     <div className='faq-container'>
       <FAQ/>

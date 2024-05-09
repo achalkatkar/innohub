@@ -8,6 +8,7 @@
     box-shadow: 0 0 10px black;
     padding: 20px 40px;
     border-radius: 15px;
+    margin-top: 100px;
 }
 .input-label{
     display: block;
@@ -24,8 +25,8 @@
     
 }
 .signup-btn{
-    background-color: black;
-    color: white;
+    border: none;
+    background-color: rgb(120, 239, 118);
     font-size: 24px;
     padding: 10px 50px;
     border-radius: 30px;
